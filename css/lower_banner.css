@@ -1,1 +1,20 @@
 @charset "utf-8";
+.lower_banner {
+  background: url(../images/imgi_14_sub_bg01_n.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 420px;
+}
+.lB_inner {
+  color: #fff;
+  padding: 90px 0;
+}
+.lB_inner > h2 {
+  font-size: 50px;
+  font-family: "Lexend", sans-serif;
+  margin-bottom: 20px;
+}
+.lB_inner > p {
+  font-size: 18px;
+  line-height: 30px;
+}
