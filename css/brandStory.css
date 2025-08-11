@@ -1,1 +1,47 @@
 @charset "utf-8";
+.brandStory {
+  padding: 160px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.bs_img {
+  width: 15%;
+  max-width: 210px;
+  /* background-color: antiquewhite; */
+}
+.bs_img > img {
+  width: 100%;
+}
+.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.bs_txt {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.bs_txt > h3 {
+  font-size: clamp(15px, 3vw, 30px);
+}
+.bs_txt > p {
+  color: #777;
+}
+.bs_linkBtn {
+  width: 200px;
+  line-height: 56px;
+  background: none;
+  border-radius: 28px;
+  border: 1px solid #201112;
+  display: flex;
+  align-items: center;
+  padding: 0px 22px;
+  justify-content: space-between;
+}
+.bs_linkBtn > span {
+  font-size: 18px;
+  font-weight: 600;
+}

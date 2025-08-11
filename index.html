@@ -34,12 +34,24 @@
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <!-- 폰트어썸연결 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- js -->
+    <script src="js/main.js"></script>
   </head>
   <body>
     <!-- 전체 -->
     <div class="wrap">
       <!-- 헤더 -->
       <header class="header">
+        <!-- 서브메뉴 배경 -->
+        <div class="h_bg"></div>
+        <!-- 상단 inner -->
         <div class="h_inner inner">
           <!-- 로고 -->
           <a href="#" class="h_logo">
@@ -59,15 +71,9 @@
               </li>
               <li>
                 <a href="#">메뉴소개</a>
-                <ul class="depth2">
-                  <li><a href="#">메뉴소개</a></li>
-                </ul>
               </li>
               <li>
                 <a href="#">매장찾기</a>
-                <ul class="depth2">
-                  <li><a href="#">매장찾기</a></li>
-                </ul>
               </li>
               <li>
                 <a href="#">커뮤니티</a>
@@ -83,9 +89,101 @@
         </div>
       </header>
       <!-- 슬라이드 배너 -->
+      <section class="visual">
+        <div class="v_inner inner"></div>
+      </section>
       <!-- 브랜드 스토리 -->
+      <section class="brandStory inner">
+        <div class="bs_img">
+          <img src="images/re02_ricon03.png" alt="브랜드스토리로고" />
+        </div>
+        <div class="contents">
+          <div class="bs_txt">
+            <h3>분식으로 모두를 행복하게 만들고 싶다는 마음으로</h3>
+            <p>
+              떡볶이 한 접시로 모두가 행복해질 수 있는 브랜드를 만들고 싶었습니다.
+              <br />
+              단순히 맛있는 음식만 드시는 매장이아니라 즐겁게 머무르며
+              <br />
+              다양한 문화와 경험을 드릴 수 있는 브랜드가 되겠습니다.
+            </p>
+          </div>
+          <button class="bs_linkBtn">
+            <span>브랜드 스토리</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
       <!-- 메뉴 소개 -->
+      <section class="menu_infor">
+        <div class="infor_inner inner">
+          <h2>HCS MENU</h2>
+          <div class="menu_bar">
+            <ul>
+              <li>떡볶이 메뉴</li>
+              <li>스페셜 메뉴</li>
+              <li>사이드 메뉴</li>
+            </ul>
+          </div>
+          <div class="menu_slide">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="menu_img">
+                    <img src="images/cream_tteok.png" alt="청양크림볶이" />
+                  </div>
+                  <p>청양 크림볶이</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="menu_img">
+                    <img src="images/happy_rosetteok.png" alt="햅삐로제볶이" />
+                  </div>
+                  <p>햅삐 로제볶이</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="menu_img">
+                    <img src="images/happy_noodles.png" alt="해피당볶이" />
+                  </div>
+                  <p>해피 당볶이</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="menu_img">
+                    <img src="images/creampane_tteok.png" alt="크림빠볶이" />
+                  </div>
+                  <p>크림 빠볶이</p>
+                </a>
+              </li>
+            </ul>
+            <div class="slideBtn">
+              <i class="fa-solid fa-angle-left"></i>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+          <button class="mI_linkBtn">
+            <span>더보기</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
       <!-- 뉴스 -->
+      <section class="news">
+        <div class="news_inner inner">
+          <h2>HCS NEWS</h2>
+           <div class="news_bar">
+            <ul>
+              <li>떡볶이 메뉴</li>
+              <li>스페셜 메뉴</li>
+              <li>사이드 메뉴</li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <!-- 하단 배너 -->
       <!-- 푸터 -->
     </div>
