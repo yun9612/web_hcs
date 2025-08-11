@@ -25,11 +25,15 @@
   max-width: 125px;
   line-height: 50px;
   border-radius: 25px;
+}
+.news_bar > ul > li > a {
   color: #777;
   font-size: 18px;
 }
 .news_bar > ul > li:first-child {
   background-color: #d52517;
+}
+.news_bar > ul > li:first-child a {
   font-weight: bold;
   color: #fff;
 }
@@ -78,5 +82,5 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -40px;
+  left: -68px;
 }

@@ -29,6 +29,8 @@
   max-width: 125px;
   line-height: 50px;
   border-radius: 25px;
+}
+.menu_bar > ul > li > a {
   color: #fff;
   font-size: 18px;
 }
@@ -44,9 +46,9 @@
   gap: 3%;
 }
 .menu_slide > ul > li {
-  background-color: #fff;
   border-radius: 15px;
   width: calc((100% - 6%) / 4);
+  background-color: #fff;
   overflow: hidden;
 }
 .menu_img {
@@ -70,7 +72,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -40px;
+  left: -68px;
 }
 /* 더보기버튼 */
 .mI_linkBtn {
@@ -89,4 +91,8 @@
 .mI_linkBtn > span {
   font-size: 18px;
   font-weight: 600;
+}
+/* hover */
+.menu_bar > ul > li:hover {
+  cursor: pointer;
 }

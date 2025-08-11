@@ -1,1 +1,36 @@
 @charset "utf-8";
+.footer {
+  background-color: #65bead;
+}
+.f_inner > hr{
+  border: 1px solid #777;
+}
+.f_nav > ul {
+  display: flex;
+  padding: 25px 0;
+  gap: 33px;
+}
+.f_nav > ul > li:first-child {
+  font-weight: bold;
+}
+.f_lower {
+  padding: 25px 0 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.f_logo {
+  width: 105px;
+}
+.f_logo > img {
+  width: 100%;
+}
+.f_info {
+  width: 75%;
+  line-height: 30px;
+}
+.f_info > h3 {
+  font-size: 16px;
+}
+.f_sns {
+  font-size: 26px;
+}
