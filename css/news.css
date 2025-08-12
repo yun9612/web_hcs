@@ -55,10 +55,10 @@
   text-align: left;
 }
 .news_img {
-  height: 430px;
   overflow: hidden;
 }
 .news_img > img {
+  display: block;
   width: 100%;
 }
 .news_txt {
@@ -78,7 +78,7 @@
   color: #777;
   font-size: 30px;
   display: flex;
-  gap: 1460px;
+  /* gap: 1460px; */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

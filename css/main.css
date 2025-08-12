@@ -27,11 +27,12 @@ body {
   color: #201112;
 }
 /* 공통영역 */
-.inner {
-  width: 100%;
-  max-width: 1400px;
-  margin: auto;
-}
 .wrap {
   width: 100%;
+}
+.inner {
+  width: 90%;
+  max-width: 1400px;
+  min-width: 290px;
+  margin: auto;
 }

@@ -52,10 +52,11 @@
   overflow: hidden;
 }
 .menu_img {
-  height: 290px;
+  /* height: 290px; */
   overflow: hidden;
 }
 .menu_img > img {
+  display: block;
   width: 100%;
 }
 .menu_slide > ul > li > a > p {
@@ -68,7 +69,7 @@
   color: #fff;
   font-size: 30px;
   display: flex;
-  gap: 1460px;
+  /* gap: 1460px; */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
