@@ -2,7 +2,10 @@
 .footer {
   background-color: #65bead;
 }
-.f_inner > hr{
+.f_inner {
+  position: relative;
+}
+.f_inner > hr {
   border: 1px solid #777;
 }
 .f_nav > ul {
@@ -13,24 +16,50 @@
 .f_nav > ul > li:first-child {
   font-weight: bold;
 }
+.f_nav > ul > li > a {
+  font-size: clamp(12px, 2vw, 16px);
+}
 .f_lower {
   padding: 25px 0 60px;
   display: flex;
-  justify-content: space-between;
+  gap: 3%;
 }
 .f_logo {
-  width: 105px;
+  width: 10%;
+  margin-bottom: 20px;
 }
 .f_logo > img {
   width: 100%;
 }
 .f_info {
   width: 75%;
-  line-height: 30px;
+  line-height: clamp(22px, 3vw, 30px);
+  font-size: clamp(12px, 2vw, 16px);
 }
 .f_info > h3 {
   font-size: 16px;
 }
 .f_sns {
-  font-size: 26px;
+  position: absolute;
+  top: 96px;
+  right: 0;
+  font-size: clamp(20px, 2vw, 26px);
+}
+/* 반응형 */
+@media all and (max-width: 768px) {
+  .f_lower {
+    flex-direction: column;
+  }
+  .f_logo {
+    width: 15%;
+  }
+  .f_info {
+    width: 88%;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .f_logo {
+    width: 20%;
+  }
 }

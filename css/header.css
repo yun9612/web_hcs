@@ -84,19 +84,26 @@
   border-radius: 2px;
   margin: 5px 0;
 }
+.hamburger:hover {
+  cursor: pointer;
+}
 /* 모바일 메뉴 */
 .mobile_menu {
   position: absolute;
   top: 0;
-  left: 0;
-  /* z-index: 9999; */
+  right: 100vw;
+  z-index: 9999;
   width: 100%;
   height: 100%;
   padding: 0 5%;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
+  transition: all 0.5s;
+}
+.mobile_menu.active {
+  right: 0;
 }
 .m_logo {
-  padding: 30px 0;
+  padding: 30.5px 0;
 }
 .m_logo > a {
   width: 105px;
@@ -110,10 +117,26 @@
 }
 .m_menu_list > li > a {
   font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  display: block;
 }
-.m_menu_list > li > a > span {
+.m_menu_list > li > a:hover + .depth3 {
+  display: block;
+}
+.more_btn {
   font-size: 14px;
   color: #777;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  transition: all 0.3s;
+}
+.depth3 {
+  margin-top: 5px;
+  display: none;
+  transition: all 0.3s;
 }
 .depth3 > li {
   padding: 6px 0;
@@ -121,6 +144,27 @@
 .depth3 > li > a {
   font-size: 14px;
   color: #777;
+}
+.x_icon {
+  position: absolute;
+  top: 54px;
+  right: 6%;
+}
+.x_icon:hover {
+  cursor: pointer;
+}
+.x_icon > span {
+  width: 25px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #333;
+  display: block;
+}
+.x_icon > span:nth-child(1) {
+  transform: rotate(45deg) translateY(2px);
+}
+.x_icon > span:nth-child(2) {
+  transform: rotate(-45deg) translateY(-3px);
 }
 /* 반응형 */
 @media all and (max-width: 768px) {

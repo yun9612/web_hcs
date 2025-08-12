@@ -28,6 +28,7 @@ body {
 }
 /* 공통영역 */
 .wrap {
+  position: relative;
   width: 100%;
 }
 .inner {
