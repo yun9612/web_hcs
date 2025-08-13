@@ -8,7 +8,7 @@
 .h_bg {
   position: absolute;
   background-color: #ffffff;
-  top: 112px;
+  top: 80px;
   left: 0;
   width: 100%;
   height: 0px;
@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 112px;
+  height: 80px;
   /* background-color: aliceblue; */
 }
 .h_logo {
@@ -45,7 +45,7 @@
 .menu > li > a {
   font-size: 20px;
   width: 100%;
-  line-height: 112px;
+  line-height: 80px;
 }
 .depth2 {
   display: block;

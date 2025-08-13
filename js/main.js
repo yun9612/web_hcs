@@ -22,4 +22,42 @@ window.addEventListener("load", function () {
     mobilemenu.classList.remove("active");
     document.body.style.overflow = "";
   });
-});
+
+  // 배너 스와이프
+  const visualSwiper = new Swiper(".visualSwiper", {
+    autoplay: {
+      delay: 2200,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+  const mvisualSwiper = new Swiper(".m_visualSwiper", {
+    autoplay: {
+      delay: 2200,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  });
+
+  // 메뉴 스와이프
+  const menuSwiper = new Swiper(".menuSwiper", {
+    slidesPerView: 1.5, //보여지는 갯수(모바일일 때)
+    spaceBetween: 20, //css에서 gap주는게 아님
+    loop: true,
+    breakpoints: {
+      590: { slidesPerView: 2.5 },
+      768: { slidesPerView: 3.5 },
+      1200: { slidesPerView: 4.5 },
+    }, //작은 사이즈부터 점점 커지게 적어주기
+  });
+  // 뉴스 스와이프
+  const newsSwiper = new Swiper(".newsSwiper", {
+    slidesPerView: 1.5, //보여지는 갯수(모바일일 때)
+    spaceBetween: 20, //css에서 gap주는게 아님
+    loop: true,
+    breakpoints: {
+      590: { slidesPerView: 2.5 },
+      1200: { slidesPerView: 3.5 },
+    }, //작은 사이즈부터 점점 커지게 적어주기
+  });
+}); //End

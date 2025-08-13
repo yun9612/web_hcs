@@ -28,6 +28,8 @@
     <meta name="twitter:domain" content="해피치즈스마일" />
     <!-- css연결 -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
@@ -43,6 +45,8 @@
       referrerpolicy="no-referrer" />
     <!-- js -->
     <script src="js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- 전체 -->
@@ -139,8 +143,18 @@
         </div>
       </div>
       <!-- 슬라이드 배너 -->
-      <section class="visual">
-        <img src="images/banner1.png" alt="상단 배너" />
+      <section class="swiper visualSwiper">
+        <div class="swiper-wrapper">
+          <img class="swiper-slide" src="images/banner1.png" alt="상단 배너" />
+          <img class="swiper-slide" src="images/imgi_7_main3.png" alt="상단 배너" />
+          <img class="swiper-slide" src="images/banner2.png" alt="상단 배너" />
+        </div>
+      </section>
+      <section class="swiper m_visualSwiper">
+        <div class="swiper-wrapper">
+          <img class="swiper-slide" src="images/m_banner.png" alt="상단 배너" />
+          <img class="swiper-slide" src="images/imgi_10_main2_m.png" alt="상단 배너" />
+        </div>
       </section>
       <!-- 브랜드 스토리 -->
       <section class="brandStory inner">
@@ -177,45 +191,74 @@
               <li><a href="#">사이드 메뉴</a></li>
             </ul>
           </div>
-          <div class="menu_slide">
-            <ul>
-              <li>
+          <!-- 메뉴 스와이퍼 -->
+          <div class="swiper menuSwiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
                 <a href="#">
                   <div class="menu_img">
                     <img src="images/cream_tteok.png" alt="청양크림볶이" />
                   </div>
-                  <p>청양 크림볶이</p>
+                  <p class="menuName">청양 크림볶이</p>
                 </a>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <a href="#">
                   <div class="menu_img">
                     <img src="images/happy_rosetteok.png" alt="햅삐로제볶이" />
                   </div>
-                  <p>햅삐 로제볶이</p>
+                  <p class="menuName">햅삐 로제볶이</p>
                 </a>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <a href="#">
                   <div class="menu_img">
                     <img src="images/happy_noodles.png" alt="해피당볶이" />
                   </div>
-                  <p>해피 당볶이</p>
+                  <p class="menuName">해피 당볶이</p>
                 </a>
               </li>
-              <li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="menu_img">
+                    <img src="images/smile_tteok.png" alt="스마일튀볶이" />
+                  </div>
+                  <p class="menuName">스마일 튀볶이</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="menu_img">
+                    <img src="images/hcs_noodles.png" alt="해치스면볶이" />
+                  </div>
+                  <p class="menuName">해치스 면볶이</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="menu_img">
+                    <img src="images/basic_tteok.png" alt="베이직떡볶이" />
+                  </div>
+                  <p class="menuName">베이직 떡볶이</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
                 <a href="#">
                   <div class="menu_img">
                     <img src="images/creampane_tteok.png" alt="크림빠볶이" />
                   </div>
-                  <p>크림 빠볶이</p>
+                  <p class="menuName">크림 빠볶이</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="menu_img">
+                    <img src="images/rose_tteok.png" alt="로제빠볶이" />
+                  </div>
+                  <p class="menuName">로제 빠볶이</p>
                 </a>
               </li>
             </ul>
-            <div class="slideBtn">
-              <i class="fa-solid fa-angle-left"></i>
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
           </div>
           <a href="#">
             <button class="mI_linkBtn">
@@ -236,9 +279,9 @@
               <li><a href="#">SNS</a></li>
             </ul>
           </div>
-          <div class="news_slide">
-            <ul>
-              <li>
+          <div class="swiper newsSwiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
                 <a href="#">
                   <div class="news_img">
                     <img src="images/notice1.png" alt="성수팝업" />
@@ -249,7 +292,7 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="swiper-slide">
                 <a href="#">
                   <div class="news_img">
                     <img src="images/notice2-re.jpg" alt="햅삐로제볶이" />
@@ -260,7 +303,29 @@
                   </div>
                 </a>
               </li>
-              <li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="news_img">
+                    <img src="images/notice3.jpg" alt="해피당볶이" />
+                  </div>
+                  <div class="news_txt">
+                    <p class="news_title">해피치즈스마일 99즈 컴퍼니 메뉴 출시</p>
+                    <p class="news_date">2023-10-30</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <div class="news_img">
+                    <img src="images/notice3.jpg" alt="해피당볶이" />
+                  </div>
+                  <div class="news_txt">
+                    <p class="news_title">해피치즈스마일 99즈 컴퍼니 메뉴 출시</p>
+                    <p class="news_date">2023-10-30</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
                 <a href="#">
                   <div class="news_img">
                     <img src="images/notice3.jpg" alt="해피당볶이" />
@@ -272,16 +337,17 @@
                 </a>
               </li>
             </ul>
-            <div class="news_slideBtn">
-              <i class="fa-solid fa-angle-left"></i>
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
           </div>
         </div>
       </section>
       <!-- 하단 배너 -->
       <section class="lower_banner">
-        <div class="lB_inner inner">
+        <div class="lB_imgs">
+          <img class="lB_img1" src="images/banner_lower.png" alt="하단배너" />
+          <img class="lB_img2" src="images/t_banner_lower.png" alt="하단배너" />
+          <img class="lB_img3" src="images/m_lowerbanner.png" alt="하단배너" />
+        </div>
+        <div class="lB_inner">
           <h2>We’re different!</h2>
           <p>
             당면 튀김, 떡 튀김, 생등심, 안심을 이용한
