@@ -62,14 +62,14 @@
 }
 /* hover */
 .menu > li:hover > a {
-  color: red;
+  color: #ac130c;
 }
 .menu:hover .depth2 {
   opacity: 1;
   visibility: visible;
 }
 .depth2 > li > a:hover {
-  color: red;
+  color: #ac130c;
   font-weight: bold;
 }
 /* 모바일용 햄버거 */
@@ -121,7 +121,10 @@
   position: relative;
   display: block;
 }
-.m_menu_list > li > a:hover + .depth3 {
+.m_menu_list > li:hover > a {
+  color: #ac130c;
+}
+.m_menu_list > li:hover .depth3 {
   display: block;
 }
 .more_btn {
@@ -144,6 +147,10 @@
 .depth3 > li > a {
   font-size: 14px;
   color: #777;
+}
+.depth3 > li > a:hover {
+  color: #ac130c;
+  font-weight: bold;
 }
 .x_icon {
   position: absolute;
