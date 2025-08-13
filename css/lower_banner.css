@@ -6,7 +6,7 @@
 .lB_imgs > .lB_img1 {
   display: block;
   width: 100%;
-  height: 40vw;
+  height: 30vw;
 }
 .lB_imgs > .lB_img2 {
   display: none;
@@ -35,6 +35,12 @@
 }
 
 /* 반응형 */
+
+@media all and (max-width: 1200px) {
+  .lB_imgs > .lB_img1 {
+    height: 50vw;
+  }
+}
 @media all and (max-width: 768px) {
   .lB_imgs > .lB_img1 {
     display: none;
@@ -42,7 +48,7 @@
   .lB_imgs > .lB_img2 {
     display: block;
   }
-  .lB_inner{
+  .lB_inner {
     padding-top: 40px;
     left: 5%;
   }
@@ -54,7 +60,7 @@
   .lB_imgs > .lB_img3 {
     display: block;
   }
-    .lB_inner{
+  .lB_inner {
     left: 8%;
   }
 }

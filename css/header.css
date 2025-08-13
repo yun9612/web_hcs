@@ -103,7 +103,7 @@
   right: 0;
 }
 .m_logo {
-  padding: 30.5px 0;
+  padding: 15px 0;
 }
 .m_logo > a {
   width: 105px;
@@ -147,7 +147,7 @@
 }
 .x_icon {
   position: absolute;
-  top: 54px;
+  top: 38px;
   right: 6%;
 }
 .x_icon:hover {

@@ -31,13 +31,6 @@ window.addEventListener("load", function () {
     },
     loop: true,
   });
-  const mvisualSwiper = new Swiper(".m_visualSwiper", {
-    autoplay: {
-      delay: 2200,
-      disableOnInteraction: false,
-    },
-    loop: true,
-  });
 
   // 메뉴 스와이프
   const menuSwiper = new Swiper(".menuSwiper", {

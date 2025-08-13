@@ -32,6 +32,9 @@
   color: #777;
   font-size: clamp(11px, 2vw, 16px);
 }
+.contents a {
+  width: 140px;
+}
 .bs_linkBtn {
   width: 200px;
   line-height: 56px;
@@ -44,7 +47,7 @@
   justify-content: space-between;
 }
 .bs_linkBtn > span {
-  font-size: clamp(12px , 2vw , 18px);
+  font-size: clamp(12px, 2vw, 18px);
   font-weight: 600;
 }
 .bs_linkBtn:hover {
@@ -56,7 +59,10 @@
     padding: 90px 0;
   }
   .bs_linkBtn {
-    transform: scale(0.7) translateX(-20%);
+    transform: scale(0.7) translate(-22%);
+  }
+  .contents {
+    gap: 20px;
   }
 }
 @media all and (max-width: 390px) {
@@ -65,13 +71,17 @@
     flex-direction: column;
     gap: 30px;
   }
+  .contents {
+    gap: 10px;
+    align-items: center;
+  }
   .bs_img {
     margin-top: 40px;
   }
   .bs_linkBtn {
-    transform: scale(0.5) translateX(60%);
+    transform: scale(0.5) translateX(-30%);
   }
-  .bs_txt{
+  .bs_txt {
     text-align: center;
   }
 }
