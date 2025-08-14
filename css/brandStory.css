@@ -45,7 +45,7 @@
 /* 반응형 */
 @media all and (max-width: 768px) {
   .brandStory {
-    padding: 90px 50px;
+    padding: 90px 0px;
     flex-direction: column;
     gap: 30px;
   }
@@ -60,12 +60,12 @@
 }
 @media all and (max-width: 390px) {
   .brandStory {
-    padding: 60px 30px;
+    padding: 60px 0px;
     flex-direction: column;
     gap: 30px;
   }
   .contents {
-    gap: 10px;
+    gap: 20px;
     align-items: center;
   }
   .bs_img {
