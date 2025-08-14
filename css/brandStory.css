@@ -32,41 +32,35 @@
   color: #777;
   font-size: clamp(11px, 2vw, 16px);
 }
-.contents a {
-  width: 100%;
-}
-.bs_linkBtn {
-  width: 40%;
-  line-height: 56px;
-  background: none;
-  border-radius: 28px;
-  border: 1px solid #201112;
+.bsBtn{
+  padding: 2% 4%;
+  border: 1px solid #777;
+  border-radius: 30px;
+  width: 35%;
   display: flex;
-  align-items: center;
-  padding: 0px 22px;
   justify-content: space-between;
-}
-.bs_linkBtn > span {
-  font-size: clamp(12px, 2vw, 18px);
-  font-weight: 600;
-}
-.bs_linkBtn:hover {
-  cursor: pointer;
+  align-items: center;
+  font-size: clamp(12px , 2vw , 18px);
 }
 /* 반응형 */
 @media all and (max-width: 768px) {
   .brandStory {
-    padding: 90px 0;
+    padding: 90px 50px;
     flex-direction: column;
     gap: 30px;
   }
   .contents {
     gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .bsBtn{
+    width: 45%;
   }
 }
 @media all and (max-width: 390px) {
   .brandStory {
-    padding: 60px 0;
+    padding: 60px 30px;
     flex-direction: column;
     gap: 30px;
   }

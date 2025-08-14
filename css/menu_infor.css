@@ -65,23 +65,17 @@
   padding: 3% 0;
   font-size: clamp(14px, 2vw, 18px);
 }
-/* 더보기버튼 */
-.mI_linkBtn {
+.menumoreBtn {
   margin-top: 50px;
-  width: 200px;
-  background: none;
-  border-radius: 28px;
+  padding: 1% 2%;
   border: 1px solid #ffffff;
-  display: flex;
-  align-items: center;
-  padding: 0px 22px;
-  justify-content: space-between;
   color: #fff;
-}
-.mI_linkBtn > span {
+  border-radius: 40px;
+  width: 16.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: clamp(12px, 2vw, 18px);
-  font-weight: 600;
-  line-height: 56px;
 }
 /* hover */
 .menu_bar > ul > li:hover {
@@ -93,10 +87,12 @@
     padding: 100px 0;
   }
   .menu_bar {
+    width: 360px;
     margin: 15px 0 40px;
   }
-  .mI_linkBtn {
-    transform: scale(0.7);
+  .menumoreBtn {
+    width: 31%;
+    padding: 1.5% 2.5%;
   }
 }
 
@@ -108,11 +104,6 @@
     width: 300px;
     margin: 15px 0 20px;
   }
-  .mI_linkBtn {
-    transform: scale(0.5);
-    margin-top: 15px;
-  }
-
   .menu_bar > ul > li {
     line-height: 30px;
   }
