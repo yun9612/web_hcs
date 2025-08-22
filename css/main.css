@@ -41,8 +41,8 @@ body {
 /* gotop 버튼 */
 #goTop {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 4%;
+  right: 5%;
   z-index: 9999;
   padding: 10px;
   border-radius: 50%;

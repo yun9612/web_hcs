@@ -63,6 +63,7 @@
 /* hover */
 .menu > li:hover > a {
   color: #ac130c;
+  font-weight: bold;
 }
 .menu:hover .depth2 {
   opacity: 1;
