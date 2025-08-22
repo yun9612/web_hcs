@@ -25,22 +25,27 @@
 .news_bar > ul > li {
   width: calc(100% / 3);
   max-width: 125px;
-  line-height: 50px;
-  border-radius: 25px;
+  min-width: 94px;
 }
 .news_bar > ul > li > a {
   color: #777;
   font-size: clamp(14px, 2vw, 18px);
+  width: 100%;
+  display: block;
+  line-height: 50px;
+  border-radius: 25px;
 }
-.news_bar > ul > li:first-child {
+.news_bar > ul > li > a.active {
   background-color: #d52517;
-}
-.news_bar > ul > li:first-child a {
   font-weight: bold;
   color: #fff;
 }
-.newsSwiper {
+.news_inner .newsSwiper.active {
+  display: block;
+}
+.news_inner .newsSwiper {
   width: 100%;
+  display: none;
 }
 .newsSwiper .swiper-wrapper {
   width: 100%;

@@ -121,11 +121,9 @@
   position: relative;
   display: block;
 }
-.m_menu_list > li:hover > a {
+.m_menu_list > li:hover > a,
+.m_menu_list > li > a.active {
   color: #ac130c;
-}
-.m_menu_list > li:hover .depth3 {
-  display: block;
 }
 .more_btn {
   font-size: 14px;
@@ -136,10 +134,16 @@
   right: 0;
   transition: all 0.3s;
 }
+.more_btn.active {
+  transform: rotate(180deg);
+}
 .depth3 {
   margin-top: 5px;
   display: none;
   transition: all 0.3s;
+}
+.depth3.active {
+  display: block;
 }
 .depth3 > li {
   padding: 6px 0;
