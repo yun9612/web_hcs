@@ -3,6 +3,9 @@
   background-color: antiquewhite;
   position: relative;
 }
+.lower_banner .inner {
+  position: relative;
+}
 .lB_imgs > .lB_img1 {
   display: block;
   width: 100%;
@@ -19,10 +22,8 @@
 }
 .lB_inner {
   position: absolute;
+  bottom: clamp(100px, 11vw, 400px);
   color: #fff;
-  padding-top: 90px;
-  top: 0;
-  left: 15%;
 }
 .lB_inner > h2 {
   font-size: clamp(30px, 5vw, 50px);

@@ -38,3 +38,17 @@ body {
   min-width: 290px;
   margin: auto;
 }
+/* gotop 버튼 */
+#goTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  border: 1px solid #fff;
+  background-color: #65bead;
+  color: #fff;
+  cursor: pointer;
+}

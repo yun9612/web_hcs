@@ -53,4 +53,13 @@ window.addEventListener("load", function () {
       1200: { slidesPerView: 3.5 },
     }, //작은 사이즈부터 점점 커지게 적어주기
   });
+
+    // gotop 버튼
+  const gotopBtn = this.document.querySelector("#goTop");
+  gotopBtn.addEventListener("click", () => {
+    this.window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 }); //End
