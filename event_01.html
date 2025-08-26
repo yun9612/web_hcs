@@ -4,24 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>해치스 피크닉 이벤트</title>
-    <!-- css -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- js -->
-    <script src="js/main.js"></script>
+
     <!-- favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/favicon/favicon-96x96.png"
-      sizes="96x96"
-    />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <!-- 폰트어썸연결 -->
     <link
@@ -29,8 +17,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
       integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- js -->
+    <script src="js/event.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- gotop버튼 -->
@@ -106,9 +101,7 @@
           <li>
             <a href="#">
               브랜드소개
-              <span class="more_btn"
-                ><i class="fa-solid fa-chevron-down"></i
-              ></span>
+              <span class="more_btn"><i class="fa-solid fa-chevron-down"></i></span>
             </a>
             <ul class="depth3">
               <li><a href="#">happy cheese smile</a></li>
@@ -120,9 +113,7 @@
           <li>
             <a href="#">
               메뉴소개
-              <span class="more_btn"
-                ><i class="fa-solid fa-chevron-down"></i
-              ></span>
+              <span class="more_btn"><i class="fa-solid fa-chevron-down"></i></span>
             </a>
             <ul class="depth3">
               <li><a href="#">메뉴소개</a></li>
@@ -131,9 +122,7 @@
           <li>
             <a href="#">
               매장찾기
-              <span class="more_btn"
-                ><i class="fa-solid fa-chevron-down"></i
-              ></span>
+              <span class="more_btn"><i class="fa-solid fa-chevron-down"></i></span>
             </a>
             <ul class="depth3">
               <li><a href="#">매장찾기</a></li>
@@ -142,9 +131,7 @@
           <li>
             <a href="#">
               커뮤니티
-              <span class="more_btn"
-                ><i class="fa-solid fa-chevron-down"></i
-              ></span>
+              <span class="more_btn"><i class="fa-solid fa-chevron-down"></i></span>
             </a>
             <ul class="depth3">
               <li><a href="#">새소식</a></li>
@@ -155,9 +142,7 @@
           <li>
             <a href="#">
               창업안내
-              <span class="more_btn"
-                ><i class="fa-solid fa-chevron-down"></i
-              ></span>
+              <span class="more_btn"><i class="fa-solid fa-chevron-down"></i></span>
             </a>
             <ul class="depth3">
               <li><a href="#">창업안내</a></li>
@@ -172,11 +157,8 @@
       <!-- 배너 -->
       <section class="event_banner">
         <div class="event_banner_web">
-          <img src="images/event_web_banner.png" alt="이벤트페이지배너" />
-          <img
-            src="images/event_moblie_banner.png"
-            alt="이벤트페이지모바일배너"
-          />
+          <img src="images/web_banner.png" alt="이벤트페이지배너" />
+          <img src="images/event_moblie_banner.png" alt="이벤트페이지모바일배너" />
         </div>
         <div class="banner_inner inner">
           <div class="b_desc">
@@ -189,15 +171,123 @@
       <!-- 내용 -->
       <div class="event_wrap inner">
         <!-- step1 -->
-         <div class="step_01">
-            <span class="step_title"><b>STEP.1 원하는 세트 구성을 고르자!</b></span>
-            <div class="set">
-                <span>SET. <b>1</b></span>
-
+        <div class="step_01">
+          <span class="step_title"><b>STEP.1 원하는 세트 구성을 고르자!</b></span>
+          <div class="set">
+            <div class="set_box">
+              <span>
+                SET.
+                <b>1</b>
+              </span>
+              <div class="box">
+                <img src="images/set1.png" alt="세트1" />
+                <div class="set_desc">
+                  <div class="set_title">
+                    <p>
+                      알찬세트
+                      <span>(2-3인분)</span>
+                    </p>
+                  </div>
+                  <div class="set_list">
+                    <span>떡볶이</span>
+                    <span>사이드 1</span>
+                    <span>사이드 2</span>
+                  </div>
+                </div>
+              </div>
             </div>
-         </div>
+            <div class="set_box">
+              <span>
+                SET.
+                <b>1</b>
+              </span>
+              <div class="box">
+                <img src="images/set2.png" alt="세트1" />
+                <div class="set_desc">
+                  <div class="set_title">
+                    <p>
+                      푸짐세트
+                      <span>(3-4인분)</span>
+                    </p>
+                  </div>
+                  <div class="set_list2">
+                    <span>떡볶이</span>
+                    <span>스페셜</span>
+                    <span>사이드 1</span>
+                    <span>사이드 2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>※ 해치스 피크닉 세트를 구매하신 분들에게 선착순 물량에 따라 피크닉 매트를 드립니다.</p>
+        </div>
         <!-- step2 -->
+        <div class="step_02">
+          <span class="step_title"><b>STEP.2 해치즈와 함께할 힐링 스팟을 고르자!</b></span>
+          <div class="swiper spotSwiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img src="images/yihyeonPark.jpg" alt="이현공원" />
+                <div class="hover_box">
+                  <div class="hover_txt">
+                    <h3>이현공원</h3>
+                    <p>대구 서구 이현동 산119</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="images/SonghaePark.png" alt="옥연지송해공원" />
+                <div class="hover_box">
+                  <div class="hover_txt">
+                    <h3>옥연지 송해공원</h3>
+                    <p>대구 달성군 옥포읍 기세리 306</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="images/riversidePark.png" alt="공항교강변공원" />
+                <div class="hover_box">
+                  <div class="hover_txt">
+                    <h3>공항교 강변공원</h3>
+                    <p>대구 북구 복현동 163-16</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="images/palhyeonPark.png" alt="팔현생태공원" />
+                <div class="hover_box">
+                  <div class="hover_txt">
+                    <h3>팔현생태공원</h3>
+                    <p>대구 수성구 고모동 6-3</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="images/duryuPark.png" alt="두류공원" />
+                <div class="hover_box">
+                  <div class="hover_txt">
+                    <h3>두류공원</h3>
+                    <p>대구 달서구 공원순환로 36</p>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <img src="images/dalsungsunsetPark.png" alt="달성노을공원" />
+                <div class="hover_box">
+                  <div class="hover_txt">
+                    <h3>달성노을공원</h3>
+                    <p>대구 달성군 논공읍 하리 899</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
         <!-- step3 -->
+        <div class="step_03">
+          <span class="step_title"><b>STEP.3 피크닉 인증샷 이벤트에 응모하기!</b></span>
+        </div>
       </div>
     </div>
   </body>
