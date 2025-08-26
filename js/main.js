@@ -107,8 +107,7 @@ window.addEventListener("load", function () {
   const newstabs = this.document.querySelectorAll(".news_bar > ul > li > a");
   const newsList = this.document.querySelectorAll(".newsSwiper");
   newstabs.forEach((newstab, index) => {
-    newstab.addEventListener("click", (e) => {
-      e.preventDefault();
+    newstab.addEventListener("click", () => {
       newstabs.forEach((tab) => {
         tab.classList.remove("active");
       });
@@ -122,10 +121,12 @@ window.addEventListener("load", function () {
 
   // gotop 버튼
   const gotopBtn = this.document.querySelector("#goTop");
-  gotopBtn.addEventListener("click", () => {
-    this.window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+  this.window.addEventListener("scroll", function () {
+    // console.log("스크롤시작");
+    if (this.document.documentElement.scrollTop > 200) {
+      gotopBtn.style.display = "block";
+    } else {
+      gotopBtn.style.display = "none";
+    }
   });
 }); //End
