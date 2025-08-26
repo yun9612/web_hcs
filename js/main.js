@@ -129,4 +129,11 @@ window.addEventListener("load", function () {
       gotopBtn.style.display = "none";
     }
   });
+
+  // 팝업창 닫기
+  const popup = this.document.querySelector(".popup");
+  const closeBtn = this.document.querySelector(".closeBtn");
+  closeBtn.addEventListener("click", function () {
+    popup.style.display = "none";
+  });
 }); //End

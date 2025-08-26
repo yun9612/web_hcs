@@ -12,10 +12,27 @@
   display: none;
 }
 
+/* 이벤트 배너 내용 */
+.event_link {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  background-color: #ffb4b8;
+  padding: 1% 3% 1% 4%;
+  border-radius: 40px;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: clamp(16px, 2.5vw, 30px);
+}
+
 /* 반응형 */
 @media (max-width: 768px) {
   .visualSwiper .swiper-wrapper .swiper-slide .webbanner {
     display: none;
+  }
+  .event_link {
+    bottom: 45%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .visualSwiper .swiper-wrapper .swiper-slide .mobilebanner {
     display: block;
