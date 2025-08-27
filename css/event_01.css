@@ -95,11 +95,11 @@
 .set_title {
   margin-top: 10px;
   font-family: "Gothic A1", sans-serif;
-  font-size: 30px;
+  font-size: clamp(20px, 3vw, 30px);
   font-weight: bold;
 }
 .set_title span {
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   font-weight: 400;
 }
 .set_list,
@@ -127,16 +127,15 @@
 /* 스팟 */
 .spotSwiper > .swiper-wrapper > .swiper-slide {
   position: relative;
-  width: calc((100% - 4%) / 3);
+  width: 100%;
   border-radius: 10px;
-  margin-bottom: 2%;
   overflow: hidden;
 }
 .spotSwiper > .swiper-wrapper > .swiper-slide img {
   width: 100%;
   display: block;
 }
-.spotList > li:hover .hover_box {
+.spotSwiper > .swiper-wrapper > .swiper-slide:hover .hover_box {
   opacity: 1;
 }
 .hover_box {
@@ -168,6 +167,25 @@
 .step_03 {
   margin-top: 80px;
 }
+.insta_box {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.insta_box > img {
+  width: 100%;
+  display: block;
+}
+.event_title {
+  padding: 10px 0;
+  color: #d52517;
+}
+.insta_text {
+  font-family: "Gothic A1", sans-serif;
+  line-height: 1.8;
+}
+
 /* 반응형 */
 @media all and (max-width: 768px) {
   .event_banner_web > img {

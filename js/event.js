@@ -64,7 +64,8 @@ window.addEventListener("load", function () {
     slidesPerView: 3,
     grid: {
       rows: 2,
+      fill: "row",
     },
-    spaceBetween: 30,
+    spaceBetween: 20,
   });
 }); //End
