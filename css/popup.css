@@ -71,3 +71,9 @@
   cursor: pointer;
   background: none;
 }
+
+@media all and (max-width: 768px) {
+  .popup {
+    display: none;
+  }
+}
