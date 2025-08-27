@@ -58,7 +58,7 @@
 .menuSwiper .swiper-wrapper .swiper-slide {
   width: 100%;
 }
-.menuSwiper .swiper-wrapper .swiper-slide a {
+.menu_box {
   display: block;
   background-color: #fff;
   height: 100%;

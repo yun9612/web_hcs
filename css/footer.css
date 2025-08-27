@@ -16,8 +16,9 @@
 .f_nav > ul > li:first-child {
   font-weight: bold;
 }
-.f_nav > ul > li > a {
+.f_nav > ul > li {
   font-size: clamp(12px, 2vw, 16px);
+  cursor: pointer;
 }
 .f_lower {
   padding: 25px 0 60px;
