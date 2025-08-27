@@ -22,7 +22,7 @@
 }
 .lB_inner {
   position: absolute;
-  bottom: clamp(100px, 11vw, 400px);
+  bottom: clamp(40px, 13vw, 400px);
   color: #fff;
 }
 .lB_inner > h2 {
@@ -50,7 +50,6 @@
     display: block;
   }
   .lB_inner {
-    padding-top: 40px;
     left: 5%;
   }
 }
@@ -63,5 +62,6 @@
   }
   .lB_inner {
     left: 8%;
+    bottom: clamp(150px, 15vw, 210px);
   }
 }
