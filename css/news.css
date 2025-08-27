@@ -113,7 +113,7 @@
     margin: 15px 0 20px;
   }
 
-  .news_bar > ul > li {
-    line-height: 30px;
+  .news_bar > ul > li > a{
+    line-height: 35px;
   }
 }

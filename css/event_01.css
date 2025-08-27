@@ -39,11 +39,11 @@
 /* step1 */
 .step_01 > p {
   font-family: "Gothic A1", sans-serif;
-  font-size: 14px;
+  font-size: clamp(12px, 1.5vw, 14px);
   margin-bottom: 80px;
 }
 .step_title {
-  font-size: 26px;
+  font-size: clamp(17px, 3vw, 26px);
   display: inline-block;
   border-radius: 30px;
   padding: 3px; /* 테두리 두께 */
@@ -71,7 +71,6 @@
   margin-bottom: 20px;
 }
 .set_box > span {
-  margin-left: 5px;
   color: #d52517;
   font-family: "DM Serif Text", serif;
   font-size: 24px;
@@ -95,7 +94,7 @@
 .set_title {
   margin-top: 10px;
   font-family: "Gothic A1", sans-serif;
-  font-size: clamp(20px, 3vw, 30px);
+  font-size: clamp(18px, 2.5vw, 30px);
   font-weight: bold;
 }
 .set_title span {
@@ -107,7 +106,7 @@
   padding: 10px 0;
   display: flex;
   gap: 10px;
-  font-size: 14px;
+  font-size: clamp(12px, 1.5vw, 14px);
 }
 .set_list > span,
 .set_list2 > span {
@@ -157,9 +156,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 3%;
+}
+.hover_txt > h3 {
+  font-size: clamp(14px, 2vw, 19px);
 }
 .hover_txt > p {
-  font-size: 14px;
+  font-size: clamp(12px, 1.5vw, 15px);
   margin-top: 2%;
 }
 
@@ -177,13 +180,10 @@
   width: 100%;
   display: block;
 }
-.event_title {
-  padding: 10px 0;
+.event_title > h2 {
+  padding-bottom: 10px;
   color: #d52517;
-}
-.insta_text {
-  font-family: "Gothic A1", sans-serif;
-  line-height: 1.8;
+  font-size: clamp(16px , 2vw , 24px);
 }
 
 /* 반응형 */
@@ -198,7 +198,7 @@
   .b_desc {
     left: 50%;
     transform: translateX(-50%);
-    bottom: clamp(350px, 70vw, 1000px);
+    bottom: clamp(300px, 70vw, 1000px);
     width: 80%;
   }
   .b_desc > p {
@@ -206,5 +206,15 @@
   }
   .set_box {
     width: 100%;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .b_desc {
+    bottom: 230px;
+  }
+  .set_list,
+  .set_list2 {
+    gap: 5px;
   }
 }
